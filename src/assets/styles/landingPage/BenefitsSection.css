@@ -1,0 +1,55 @@
+@import './global.css';
+
+/* ==========================================================================
+           5. ESTILOS BENEFICIOS (Para tu BenefitsSection.vue)
+           ========================================================================== */
+        .benefits {
+            padding: 100px 0;
+        }
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        .benefit-block {
+            background: var(--secondary);
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        .benefit-block:hover {
+            transform: scale(1.02);
+            background: var(--primary);
+        }
+        .benefit-block span {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .benefit-block h3 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .benefit-block:hover h3 {
+            font-size: 1.8rem;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        .benefit-block p {
+            color: var(--white);
+        }
+
+        .benefit-block i {
+            color: var(--white);
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .benefits-grid { grid-template-columns: 1fr; }
+        }

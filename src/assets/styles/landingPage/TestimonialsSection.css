@@ -1,0 +1,33 @@
+@import './global.css';
+
+/* ==========================================================================
+           7. ESTILOS TESTIMONIOS (Para tu TestimonialsSection.vue)
+           ========================================================================== */
+        .testimonials {
+            padding: 100px 0;
+            background-color: var(--bg-light);
+        }
+        .testimoinal-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .stars {
+            color: #FFA502;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        .quote {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 20px;
+            color: var(--secondary);
+        }
+        .author {
+            font-weight: 600;
+            color: var(--primary);
+        }
